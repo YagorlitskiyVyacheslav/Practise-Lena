@@ -1,0 +1,191 @@
+/* EXAMPLE */
+
+.position-absolute {
+  position: absolute;
+
+}
+/* /EXAMPLE */
+
+ul {
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+:root { 
+  --color-primary: #070707;
+  --color-secondary: #828282;
+  --color-secondary-shade: #f6f6f6;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-34: 34px;
+}
+
+/* BOTH */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: var(--size-34);
+  color: var(--color-primary);
+}
+
+.description {
+  font-size: var(--size-16);
+  text-align: center;
+  color: var(--color-primary);
+
+}
+
+/* /BOTH */
+
+
+/* HEADER */
+
+.nav-item {
+  display: inline-block;
+}
+
+.navigation:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--color-secondary);
+}
+
+.nav-list {
+  margin: 32px 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 154px;
+}
+
+.nav-link {
+  font-size: var(--size-18);
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+
+/* USER SECTION */
+
+.user-section {
+  padding: 40px 0 104px;
+}
+
+.user-name {
+  font-size: 47px;
+  width: 123px;
+  color: var(--color-primary);
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.user-profession {
+  margin: 0 290px 0 300px;
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.user-profession span {
+  display: block;
+}
+
+.lang {
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(270deg) translate(25px, 100%);
+}
+
+.not-active {
+  color: var(--color-secondary);
+}
+
+.active-lang {
+  color: var(--color-primary);
+}
+
+/* ABOUT ME SECTION */
+
+.about-me-container {
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 107px;
+}
+
+.about-me-background {
+  background-color: var(--color-secondary-shade);
+}
+
+.about-me-desc {
+  margin: 0 auto;
+}
+
+.about-me-desc:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about-me-desc:first-child {
+  width: 485px;
+}
+
+.about-me-desc:nth-child(2) {
+  width: 415px;
+}
+
+.about-me-desc:last-child {
+  width: 345px;
+}
+
+.about-me-title {
+  margin-bottom: 18px;
+}
+
+/* SKILLS */
+
+.skills-container {
+  text-align: center;
+}
+
+.skills-title {
+  margin-bottom: 70px;
+}
+
+.skills-desc {
+  margin-bottom: 84px;
+}
+
+.active-three-stars:nth-child(n+4) path {
+  fill: var(--color-secondary-shade)
+}
+
+.active-three-stars:nth-child(-n+3) path {
+  fill: var(--color-primary)
+}
+
+.active-four-stars:nth-child(n+5) path {
+  fill: var(--color-secondary-shade)
+}
+
+.active-four-stars:nth-child(-n+4) path {
+  fill: var(--color-primary)
+}
